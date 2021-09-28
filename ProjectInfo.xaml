@@ -1,0 +1,40 @@
+﻿<Window x:Class="Project_Control.ProjectInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Control"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Управление Проектом" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="257*"/>
+        </Grid.ColumnDefinitions>
+        <Border VerticalAlignment="Center" Margin="15,10,15,9" Padding="30" CornerRadius="20" MaxWidth="750" MaxHeight="550" MinWidth="750" MinHeight="550" Grid.ColumnSpan="2">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="60" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Проект" FontSize="30" Margin=" 0 0 0 15"/>
+                <Button Click="Button_Click_Save" HorizontalAlignment="Right" Content="Сохранить проект" Style="{StaticResource MaterialDesignOutlinedButton}"/>
+                <TextBox x:Name="nameProject"/>
+                <TextBox x:Name="descProject" Margin="0,0,240,0"/>
+                <TextBox x:Name="nameProjectBay" Height="101" Margin="0,0,240,0"/>
+                <TextBox x:Name="dataStart" Margin="0,0,240,0"/>
+                <TextBox x:Name="dataStop" Margin="0,0,240,0"/>
+                <TextBox x:Name="userWork" Margin="0,0,240,0"/>
+                <TextBox x:Name="ammountProject" Margin="0,0,240,0"/>
+                <CheckBox Content="Регистрация проекта" Height="22" Margin="0,0,240,0"/>
+                <CheckBox Content="1-й этап работы над проектом" Height="22" Margin="0,0,240,0"/>
+                <CheckBox Content="2-й этап работы над проектом" Height="22" Margin="0,0,240,0"/>
+                <CheckBox Content="3-й этап работы над проектом" Height="22" Margin="0,0,240,0"/>
+                <CheckBox Content="Оплата от заказчика" Height="22" Margin="0,0,240,0"/>
+                <CheckBox Content="Проект сдан на проверку" Height="22" Margin="0,0,240,0"/>
+                <CheckBox Content="Проект завершен" Height="22" Margin="0,0,240,0"/>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
